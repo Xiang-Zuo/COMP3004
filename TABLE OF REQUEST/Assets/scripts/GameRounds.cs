@@ -6,10 +6,13 @@ using UnityEngine.SceneManagement;
 public class GameRounds : MonoBehaviour {
     bool quit = false;
 	int stat;
-    public GameObject[] Adventure= {};
-   
+    GameObject[] adventure;
+    GameObject[] knight;
+    GameObject[] championknight;
+    GameObject[] squire;
 
-	/**
+
+    /**
 	 * stat:
 	 * 0 for Initial page
 	 * 1 for draw a card from story deck
@@ -21,14 +24,24 @@ public class GameRounds : MonoBehaviour {
 	 * 7 for check win, return 1 if not
 	**/
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         stat = 0;
+        squire = GameObject.FindGameObjectsWithTag("squire");
+        knight = GameObject.FindGameObjectsWithTag("knight");
+        championknight = GameObject.FindGameObjectsWithTag("championknight");
+        for (int i=0; i<4; i++)
+        {
+            knight[i].SetActive(false);
+            championknight[i].SetActive(false);
+        }
+
+        //adventure=GameObject.
 	}
 	
 	// Update is called once per frame
 	void Update () {
-            playing(stat);
+           // playing(stat);
     }
 
 	void playing(int stat)
