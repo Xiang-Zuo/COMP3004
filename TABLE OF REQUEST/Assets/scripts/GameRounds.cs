@@ -1,15 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameRounds : MonoBehaviour {
+    bool quit = false;
+	int stat;
+    public GameObject[] Adventure= {};
+   
 
-
-
-	int STAT; 
 	/**
-	 * STAT:
-	 * 0 for Initial
+	 * stat:
+	 * 0 for Initial page
 	 * 1 for draw a card from story deck
 	 * 2 for Quest
 	 * 3 for Tournament
@@ -21,43 +23,60 @@ public class GameRounds : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+        stat = 0;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+            playing(stat);
+    }
 
-	void Round(int stat)
+	void playing(int stat)
 	{
-		if (STAT == 1) {
+        if (stat == 0)
+        {
+            print("0");
+            stat = 7;
+            playing(stat);
+        }
+            if (stat == 1)
+            {
+            print("1");
+            stat = 2;
+            playing(stat);
+            }
 
-		}
+            if (stat == 2)
+            {
+            print("2");
+            stat = 7;
+            playing(stat);
+            }
 
-		if (STAT == 2) {
+            if (stat == 3)
+            {
 
-		}
+            }
 
-		if (STAT == 3) {
+            if (stat == 4)
+            {
 
-		}
+            }
 
-		if (STAT == 4) {
+            if (stat == 5)
+            {
 
-		}
+            }
 
-		if (STAT == 5) {
+            if (stat == 6)
+            {
 
-		}
+            }
 
-		if (STAT == 6) {
-
-		}
-
-		if (STAT == 7) {
-
-		}
-
+            if (stat == 7)
+            {
+            SceneManager.LoadScene(0);
+            }
+        
 	}
 }
