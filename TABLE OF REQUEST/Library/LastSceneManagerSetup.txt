@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/scenes/start-menu.unity
+=======
+- path: Assets/scenes/gameBoard_0122.unity
+>>>>>>> ad4fc3a58e95020aca45f6c3615f4b0c5d352cac
   isLoaded: 1
   isActive: 1
