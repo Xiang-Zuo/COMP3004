@@ -60,8 +60,12 @@ MonoBehaviour:
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 9
 >>>>>>> ad4fc3a58e95020aca45f6c3615f4b0c5d352cac
+=======
+  controlID: 52
+>>>>>>> parent of ad4fc3a... rank change version 1
 =======
   controlID: 52
 >>>>>>> parent of ad4fc3a... rank change version 1
@@ -96,8 +100,12 @@ MonoBehaviour:
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 10
 >>>>>>> ad4fc3a58e95020aca45f6c3615f4b0c5d352cac
+=======
+  controlID: 53
+>>>>>>> parent of ad4fc3a... rank change version 1
 =======
   controlID: 53
 >>>>>>> parent of ad4fc3a... rank change version 1
@@ -239,8 +247,12 @@ MonoBehaviour:
 =======
     height: 997
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ad4fc3a58e95020aca45f6c3615f4b0c5d352cac
   m_MinSize: {x: 950, y: 300}
+=======
+  m_MinSize: {x: 950, y: 542}
+>>>>>>> parent of ad4fc3a... rank change version 1
 =======
   m_MinSize: {x: 950, y: 542}
 >>>>>>> parent of ad4fc3a... rank change version 1
@@ -322,8 +334,12 @@ MonoBehaviour:
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 11
 >>>>>>> ad4fc3a58e95020aca45f6c3615f4b0c5d352cac
+=======
+  controlID: 54
+>>>>>>> parent of ad4fc3a... rank change version 1
 =======
   controlID: 54
 >>>>>>> parent of ad4fc3a... rank change version 1
@@ -359,8 +375,12 @@ MonoBehaviour:
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 12
 >>>>>>> ad4fc3a58e95020aca45f6c3615f4b0c5d352cac
+=======
+  controlID: 55
+>>>>>>> parent of ad4fc3a... rank change version 1
 =======
   controlID: 55
 >>>>>>> parent of ad4fc3a... rank change version 1
@@ -545,6 +565,7 @@ MonoBehaviour:
     m_Folders:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/scripts
 =======
     - Assets/scenes
@@ -571,10 +592,18 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
 >>>>>>> parent of ad4fc3a... rank change version 1
+=======
+    - Assets
+  m_ViewMode: 1
+  m_StartGridSize: 96
+  m_LastFolders:
+  - Assets
+>>>>>>> parent of ad4fc3a... rank change version 1
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\XIANG ZUO\Documents\GitHub\COMP3004\TABLE OF REQUEST
   m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 79}
     m_SelectedIDs: da270000
@@ -582,10 +611,15 @@ MonoBehaviour:
     m_ExpandedIDs: 000000006e270000e427000036280000522b0000542b0000562b000000ca9a3bffffff7f
 >>>>>>> ad4fc3a58e95020aca45f6c3615f4b0c5d352cac
 =======
+=======
+>>>>>>> parent of ad4fc3a... rank change version 1
     scrollPos: {x: 0, y: 43.11111}
     m_SelectedIDs: 6e270000
     m_LastClickedID: 10094
     m_ExpandedIDs: 000000006e270000e427000036280000582b00005a2b00005c2b000000ca9a3bffffff7f
+<<<<<<< HEAD
+>>>>>>> parent of ad4fc3a... rank change version 1
+=======
 >>>>>>> parent of ad4fc3a... rank change version 1
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -616,10 +650,14 @@ MonoBehaviour:
     m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000006a270000d8270000
 =======
     m_ExpandedIDs: 000000006e270000e427000036280000522b0000542b0000562b0000
 >>>>>>> ad4fc3a58e95020aca45f6c3615f4b0c5d352cac
+=======
+    m_ExpandedIDs: 000000006e270000e427000036280000582b00005a2b00005c2b0000
+>>>>>>> parent of ad4fc3a... rank change version 1
 =======
     m_ExpandedIDs: 000000006e270000e427000036280000582b00005a2b00005c2b0000
 >>>>>>> parent of ad4fc3a... rank change version 1
@@ -651,12 +689,17 @@ MonoBehaviour:
     m_LastClickedInstanceID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 9c290000
 =======
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 9c290000f2290000
 >>>>>>> ad4fc3a58e95020aca45f6c3615f4b0c5d352cac
+=======
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: 9c290000
+>>>>>>> parent of ad4fc3a... rank change version 1
 =======
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 9c290000
@@ -776,10 +819,14 @@ MonoBehaviour:
     m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 9efbffff00000000302a0000482a0000
 =======
     m_ExpandedIDs: b4c0ffffc6c1ffff82c8ffffcaddffff5ae3ffff62f0ffff9efbffff00000000ee3000004c31000056310000fc350000
 >>>>>>> ad4fc3a58e95020aca45f6c3615f4b0c5d352cac
+=======
+    m_ExpandedIDs: 9efbffff00000000
+>>>>>>> parent of ad4fc3a... rank change version 1
 =======
     m_ExpandedIDs: 9efbffff00000000
 >>>>>>> parent of ad4fc3a... rank change version 1
@@ -851,8 +898,12 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   lastFramingTime: 9564.918091128282
 >>>>>>> ad4fc3a58e95020aca45f6c3615f4b0c5d352cac
+=======
+  lastFramingTime: 2609.3097048278596
+>>>>>>> parent of ad4fc3a... rank change version 1
 =======
   lastFramingTime: 2609.3097048278596
 >>>>>>> parent of ad4fc3a... rank change version 1
@@ -860,6 +911,7 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_Target: {x: 546.3583, y: -162.02068, z: 10.482922}
@@ -870,6 +922,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -1.7555181, y: 5.1818795, z: -0.6254231}
 >>>>>>> ad4fc3a58e95020aca45f6c3615f4b0c5d352cac
+=======
+    m_Target: {x: -5.0651507, y: 1.7010146, z: -10.46875}
+    speed: 2
+    m_Value: {x: -5.0651507, y: 1.7010146, z: -10.46875}
+>>>>>>> parent of ad4fc3a... rank change version 1
 =======
     m_Target: {x: -5.0651507, y: 1.7010146, z: -10.46875}
     speed: 2
@@ -904,6 +961,7 @@ MonoBehaviour:
   m_Size:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 1013.0167
     speed: 2
     m_Value: 1013.0167
@@ -912,6 +970,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 74.55809
 >>>>>>> ad4fc3a58e95020aca45f6c3615f4b0c5d352cac
+=======
+    m_Target: 69.47449
+    speed: 2
+    m_Value: 69.47449
+>>>>>>> parent of ad4fc3a... rank change version 1
 =======
     m_Target: 69.47449
     speed: 2
