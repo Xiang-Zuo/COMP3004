@@ -5,6 +5,6 @@ using UnityEngine;
 public class Card : MonoBehaviour {
 
     public string name;
-    public int atk = 15;
+    
 
 }
