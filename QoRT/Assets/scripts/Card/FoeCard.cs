@@ -7,23 +7,12 @@ using UnityEngine;
 public class FoeCard : Card
 {
    // Card aFoe;
-    public int atk;
-    public int atkSpecial=-1;
+    public int atk { get; set; }
+    public int atkSpecial { get; set; }
 
-    public void print()
+    public void printOn()
     {
         Debug.Log("atk" + atk);
-    }
-
-    void Start()
-    {
-        FoeCard aFoe = new FoeCard();
-       
-        aFoe.name = "aaa";
-        aFoe.atk = 10;
-        Debug.Log(aFoe.name);
-        aFoe.print();
-
     }
 
 }

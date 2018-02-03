@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Card : MonoBehaviour {
 
-        public string c_name;
+    public string name;
     
+
 }
