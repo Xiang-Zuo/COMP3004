@@ -73,6 +73,7 @@ public class LoadCards : MonoBehaviour{
         aCard.transform.position = card_initial_transform.position;
         iTween.MoveTo(aCard,SetFinalPosition().position, 3f);
         card_final_transform_p1.Translate(Vector2.right * 1);
+        card_final_transform_p1.Translate(Vector3.back * 0.1f);
        
     }
 
