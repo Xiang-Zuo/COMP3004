@@ -637,6 +637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Thieves
+  harm: 0
 --- !u!1 &111010026
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,6 +930,68 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &178980108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 178980111}
+  - component: {fileID: 178980110}
+  - component: {fileID: 178980109}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &178980109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 178980108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &178980110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 178980108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 5
+--- !u!4 &178980111
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 178980108}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &189440702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,6 +1078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Saxon Knight
+  harm: 0
 --- !u!1 &201047808
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,6 +1238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Evil Knight
+  harm: 0
 --- !u!1 &210281404
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,6 +1544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Thieves
+  harm: 0
 --- !u!1 &263672491
 GameObject:
   m_ObjectHideFlags: 0
@@ -1638,6 +1704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Thieves
+  harm: 0
 --- !u!1 &285813832
 GameObject:
   m_ObjectHideFlags: 0
@@ -2089,6 +2156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Saxon Knight
+  harm: 0
 --- !u!1 &374810543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2248,6 +2316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Saxons
+  harm: 0
 --- !u!1 &409918540
 GameObject:
   m_ObjectHideFlags: 0
@@ -2480,6 +2549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Thieves
+  harm: 0
 --- !u!1 &458916330
 GameObject:
   m_ObjectHideFlags: 0
@@ -2564,6 +2634,7 @@ GameObject:
   - component: {fileID: 459866966}
   - component: {fileID: 459866965}
   - component: {fileID: 459866964}
+  - component: {fileID: 459866968}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2634,6 +2705,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &459866968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 459866963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161c09d3bb2064d4585c3594368dfd29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &462092235
 GameObject:
   m_ObjectHideFlags: 0
@@ -2720,6 +2802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
+  harm: 0
 --- !u!1 &468849020
 GameObject:
   m_ObjectHideFlags: 0
@@ -2879,6 +2962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
+  harm: 0
 --- !u!1 &475018136
 GameObject:
   m_ObjectHideFlags: 0
@@ -2965,6 +3049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
+  harm: 0
 --- !u!1 &516248615
 GameObject:
   m_ObjectHideFlags: 0
@@ -3051,6 +3136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Robber Knight
+  harm: 0
 --- !u!1 &542627827
 GameObject:
   m_ObjectHideFlags: 0
@@ -3867,6 +3953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Saxon Knight
+  harm: 0
 --- !u!1 &710446889
 GameObject:
   m_ObjectHideFlags: 0
@@ -3953,6 +4040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Robber Knight
+  harm: 0
 --- !u!1 &718539584
 GameObject:
   m_ObjectHideFlags: 0
@@ -4039,6 +4127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Black Knight
+  harm: 0
 --- !u!1 &732893102
 GameObject:
   m_ObjectHideFlags: 0
@@ -4198,6 +4287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Black Knight
+  harm: 0
 --- !u!1 &786260534
 GameObject:
   m_ObjectHideFlags: 0
@@ -4722,6 +4812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Saxon Knight
+  harm: 0
 --- !u!1 &916276976
 GameObject:
   m_ObjectHideFlags: 0
@@ -4808,6 +4899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Boar
+  harm: 0
 --- !u!1 &929566675
 GameObject:
   m_ObjectHideFlags: 0
@@ -5259,6 +5351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Black Knight
+  harm: 0
 --- !u!1 &1051926891
 GameObject:
   m_ObjectHideFlags: 0
@@ -5418,6 +5511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Evil Knight
+  harm: 0
 --- !u!1 &1104218138
 GameObject:
   m_ObjectHideFlags: 0
@@ -5577,6 +5671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Thieves
+  harm: 0
 --- !u!1 &1106221804
 GameObject:
   m_ObjectHideFlags: 0
@@ -5809,6 +5904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: sq
+  harm: 0
   atk: 0
 --- !u!1 &1112193456
 GameObject:
@@ -5969,6 +6065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Saxon Knight
+  harm: 0
 --- !u!1 &1127419658
 GameObject:
   m_ObjectHideFlags: 0
@@ -6055,6 +6152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Evil Knight
+  harm: 0
 --- !u!1 &1137461029
 GameObject:
   m_ObjectHideFlags: 0
@@ -6082,43 +6180,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb736017c9f4c18408a3ef6a57ff9522, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardPrefab: {fileID: 1806987724}
+  cardPrefab: {fileID: 0}
   card_initial_transform: {fileID: 1104218140}
   card_final_transform_p1: {fileID: 69219503}
   card_final_transform_p2: {fileID: 1508636695}
   card_final_transform_p3: {fileID: 1973245031}
   card_final_transform_p4: {fileID: 122848834}
   cards:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -6514,6 +6582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Robber Knight
+  harm: 0
 --- !u!1 &1180919872
 GameObject:
   m_ObjectHideFlags: 0
@@ -6600,6 +6669,101 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Thieves
+  harm: 0
+--- !u!1 &1181027727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1181027731}
+  - component: {fileID: 1181027730}
+  - component: {fileID: 1181027729}
+  - component: {fileID: 1181027728}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1181027728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1181027727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1181027729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1181027727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &1181027730
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1181027727}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 1
+  m_Camera: {fileID: 459866966}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1181027731
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1181027727}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1482295122}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1184250819
 GameObject:
   m_ObjectHideFlags: 0
@@ -6759,6 +6923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Saxon Knight
+  harm: 0
 --- !u!1 &1249570861
 GameObject:
   m_ObjectHideFlags: 0
@@ -6918,6 +7083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Saxons
+  harm: 0
 --- !u!1 &1275744272
 GameObject:
   m_ObjectHideFlags: 0
@@ -7077,6 +7243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Green Knight
+  harm: 0
 --- !u!1 &1309970849
 GameObject:
   m_ObjectHideFlags: 0
@@ -7309,6 +7476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Robber Knight
+  harm: 0
 --- !u!1 &1357270321
 GameObject:
   m_ObjectHideFlags: 0
@@ -7468,6 +7636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Evil Knight
+  harm: 0
 --- !u!1 &1358986393
 GameObject:
   m_ObjectHideFlags: 0
@@ -7627,6 +7796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Robber Knight
+  harm: 0
 --- !u!1 &1433110787
 GameObject:
   m_ObjectHideFlags: 0
@@ -7932,6 +8102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Saxons
+  harm: 0
 --- !u!1 &1481870033
 GameObject:
   m_ObjectHideFlags: 0
@@ -8005,6 +8176,80 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1482295121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1482295122}
+  - component: {fileID: 1482295124}
+  - component: {fileID: 1482295123}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1482295122
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1482295121}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1181027731}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 200, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1482295123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1482295121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &1482295124
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1482295121}
 --- !u!1 &1494297418
 GameObject:
   m_ObjectHideFlags: 0
@@ -8383,6 +8628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Boar
+  harm: 0
 --- !u!1 &1583728435
 GameObject:
   m_ObjectHideFlags: 0
@@ -8542,6 +8788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Saxon Knight
+  harm: 0
 --- !u!1 &1588861141
 GameObject:
   m_ObjectHideFlags: 0
@@ -8774,6 +9021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
+  harm: 0
 --- !u!1 &1633578593
 GameObject:
   m_ObjectHideFlags: 0
@@ -8860,6 +9108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Evil Knight
+  harm: 0
 --- !u!1 &1636111508
 GameObject:
   m_ObjectHideFlags: 0
@@ -8946,6 +9195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: sq
+  harm: 0
   atk: 0
 --- !u!1 &1668883244
 GameObject:
@@ -9106,6 +9356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Robber Knight
+  harm: 0
 --- !u!1 &1704074178
 GameObject:
   m_ObjectHideFlags: 0
@@ -9192,6 +9443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
+  harm: 0
 --- !u!1 &1713110034
 GameObject:
   m_ObjectHideFlags: 0
@@ -9278,6 +9530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Thieves
+  harm: 0
 --- !u!1 &1713637122
 GameObject:
   m_ObjectHideFlags: 0
@@ -9364,6 +9617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
+  harm: 0
   atk: 0
 --- !u!1 &1718555310
 GameObject:
@@ -9648,6 +9902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Green Knight
+  harm: 0
 --- !u!1 &1797471504
 GameObject:
   m_ObjectHideFlags: 0
@@ -9807,6 +10062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Boar
+  harm: 0
 --- !u!1 &1806987724
 GameObject:
   m_ObjectHideFlags: 0
@@ -10112,6 +10368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
+  harm: 0
 --- !u!1 &1841105297
 GameObject:
   m_ObjectHideFlags: 0
@@ -10417,6 +10674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
+  harm: 0
 --- !u!1 &1929244498
 GameObject:
   m_ObjectHideFlags: 0
@@ -10503,6 +10761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Saxon Knight
+  harm: 0
 --- !u!1 &1946302248
 GameObject:
   m_ObjectHideFlags: 0
@@ -10589,6 +10848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Saxons
+  harm: 0
 --- !u!1 &1955471986
 GameObject:
   m_ObjectHideFlags: 0
@@ -10748,6 +11008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Evil Knight
+  harm: 0
 --- !u!1 &1973245030
 GameObject:
   m_ObjectHideFlags: 0
@@ -10907,6 +11168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Thieves
+  harm: 0
 --- !u!1 &2066913521
 GameObject:
   m_ObjectHideFlags: 0
@@ -11139,6 +11401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Saxons
+  harm: 0
 --- !u!1 &2087570457
 GameObject:
   m_ObjectHideFlags: 0
@@ -11482,6 +11745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Boar
+  harm: 0
 --- !u!1 &2141790530
 GameObject:
   m_ObjectHideFlags: 0
@@ -11568,3 +11832,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Robber Knight
+  harm: 0
