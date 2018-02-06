@@ -21,7 +21,7 @@ public class LoadCards : MonoBehaviour{
     public const int MAXPLAYERNUM = 4;
     private float nextActionTime = 0.0f;
     private float period = 0.2f;
-    private int index = MAXCARDNUM;
+    private int index = 117;
 
 	private string[] cardName = {"QuestsFoes_15_15_01_Robber","QuestsFoes_10_20_01_Saxons","QuestsFoes_05_15_01_Boar",
 		"QuestsFoes_05_05_01_Thieves","QuestsFoes_25_40_01_Green","QuestsFoes_25_35_01_Black","QuestsFoes_20_30_01_Evil",
@@ -52,8 +52,7 @@ public class LoadCards : MonoBehaviour{
     
     void Start()
     {
-        LoadCard();
-        
+        LoadCard();     
     }
 	
 	// Update is called once per frame
@@ -74,7 +73,7 @@ public class LoadCards : MonoBehaviour{
         iTween.MoveTo(aCard,SetFinalPosition().position, 3f);
         card_final_transform_p1.Translate(Vector2.right * 1);
         card_final_transform_p1.Translate(Vector3.back * 0.1f);
-       
+
     }
 
     void SetRandomValue()

@@ -2,19 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FoeCard : Card
-{
+public class AllyCard : Card {
 
     private int atk;
-    private int atkSpecial;
+    private int bidNum;
     private Ability ability;
 
-    public FoeCard(string aName, Kind aKind, int anAtk, int anAtkSpecial, Ability anAbility)
+    public AllyCard(string aName, Kind aKind, int anAtk, int aBidNum, Ability anAbility)
     {
         this.setName(aName);
         this.setKind(aKind);
         this.atk = anAtk;
-        this.atkSpecial = anAtkSpecial;
+        this.bidNum = aBidNum;
         this.ability = anAbility;
     }
     public int getAtk()
@@ -22,9 +21,9 @@ public class FoeCard : Card
         return this.atk;
     }
 
-    public int getAtkSpecial()
+    public int getBidNum()
     {
-        return this.atkSpecial;
+        return this.bidNum;
     }
     public Ability getAbility()
     {
