@@ -7,15 +7,15 @@ public class FoeCard : Card
 
     private int atk;
     private int atkSpecial;
-    private Ability ability;
+    //private Ability ability;
 
-    public FoeCard(string aName, Kind aKind, int anAtk, int anAtkSpecial, Ability anAbility)
+    public FoeCard(string aName, Kind aKind, int anAtk, int anAtkSpecial)
     {
         this.setName(aName);
         this.setKind(aKind);
         this.atk = anAtk;
         this.atkSpecial = anAtkSpecial;
-        this.ability = anAbility;
+        //this.ability = anAbility;
     }
     public int getAtk()
     {
@@ -26,9 +26,9 @@ public class FoeCard : Card
     {
         return this.atkSpecial;
     }
-    public Ability getAbility()
+    /*public Ability getAbility()
     {
         return this.ability;
-    }
+    }*/
 
 }

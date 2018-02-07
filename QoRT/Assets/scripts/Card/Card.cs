@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Card {
+public class Card {
 
     private string name;
     private Kind kind;
@@ -11,7 +11,6 @@ public abstract class Card {
     {
         return this.name;
     }
-
 
     public Kind getKind()
     {
