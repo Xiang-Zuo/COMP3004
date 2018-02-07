@@ -9,5 +9,7 @@ public enum Kind {
     AMOUR,
     TEST,
     TOURNAMENT,
-    WEAPON
+    WEAPON,
+    EVENT,
+    RANK
 }

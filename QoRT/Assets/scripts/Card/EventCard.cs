@@ -8,12 +8,7 @@ public class EventCard : Card {
     {
         this.setName(aName);
         this.setKind(aKind);
-      //  this.ability = anAbility;
+      
     }
-
-   /* public Ability getAbility()
-    {
-        return this.ability;
-    }*/
 }
 

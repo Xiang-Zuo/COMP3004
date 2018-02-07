@@ -123,3 +123,43 @@ QuestsTest_02_Questing_Beast
 QuestsTest_02_Temptation
 QuestsTest_02_Valor
 QuestsTest_02_Morgan_Le_Fey
+        SQ_JTTEF_3_1
+        SQ_VKAE _3_1
+        SQ_VKAE _3_2
+        SQ_RTSR _2_1
+        SQ_RTSR _2_2
+        SQ_BH   _2_1
+        SQ_BH   _2_2
+        SQ_SFTQB_4_1
+        SQ_DTQH _4_1
+        SQ_STD  _3_1
+        SQ_RTFM _3_1
+        SQ_SFTHG_5_1
+        SQ_TOTGK_4_1
+        ST_AC_3
+        ST_AO_2
+        ST_AT_1
+        ST_AY_0
+        SE_PL_1
+        SE_KR_1
+        SE_KR_2
+        SE_QF_1
+        SE_QF_2
+        SE_KC_1
+        SE_PT_1
+        SE_CD_1
+        SE_PO_1
+        SE_CC_1
+        SE_CC_2
+        RD_SQ_05_1
+        RD_SQ_05_2
+        RD_SQ_05_3
+        RD_SQ_05_4
+        RD_KN_10_1
+        RD_KN_10_2
+        RD_KN_10_3
+        RD_KN_10_4
+        RD_CK_20_1
+        RD_CK_20_2
+        RD_CK_20_3
+        RD_CK_20_4
