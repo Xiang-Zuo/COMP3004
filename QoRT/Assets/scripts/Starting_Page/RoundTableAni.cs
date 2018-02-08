@@ -13,12 +13,12 @@ public class RoundTableAni : MonoBehaviour {
 			roundTable.transform.localScale += new Vector3 (0.25f, 0.25f, 0f);
 		}
 		roundTable.transform.Rotate(new Vector3(0f,0f,-1.5f));
-		guideBtn.fontSize = 28;
+		guideBtn.fontSize = 40;
 	}
 
 	void OnMouseExit (){
 		roundTable.transform.localScale = new Vector3 (7.5f, 7.5f, 0);
-		guideBtn.fontSize = 25;
+		guideBtn.fontSize = 30;
 	}
 
 

@@ -12,12 +12,12 @@ public class SwordAni : MonoBehaviour {
 		if (sword.transform.localScale.x < 15) {
 			sword.transform.localScale += new Vector3 (0.5f, 0.5f, 0);
 		}
-		startBtn.fontSize = 28;
+		startBtn.fontSize = 40;
 	}
 
 	void OnMouseExit (){
 		sword.transform.localScale = new Vector3 (12f, 12f, 0);
-		startBtn.fontSize = 25;
+		startBtn.fontSize = 30;
 	}
 		
 

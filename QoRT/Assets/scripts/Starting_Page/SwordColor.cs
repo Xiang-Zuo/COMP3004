@@ -10,7 +10,7 @@ public class SwordColor : MonoBehaviour {
 
 
 	void OnMouseOver (){
-		gameObject.GetComponent<Renderer> ().material.color = new Color (2.5f,2.5f,2.5f);
+		gameObject.GetComponent<Renderer> ().material.color = new Color (2f,2f,2f);
 	}
 
 	void OnMouseExit (){

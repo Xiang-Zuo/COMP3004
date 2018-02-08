@@ -8,6 +8,7 @@ public class TitleColor : MonoBehaviour {
 	Text title;
 	Color aColor;
 	float aValue;
+	bool stop;
 	public Text start;
 	public Text guide;
 	public GameObject sword;
@@ -19,25 +20,31 @@ public class TitleColor : MonoBehaviour {
 		aColor = title.material.color;
 		aColor.a = 5f;
 		title.material.color = aColor;
-		start.enabled = false;
-		guide.enabled = false;
-		sword.SetActive (false);
-		roundTable.SetActive (false);
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		print (aValue);
+
 		aValue = aColor.a;
 		if (aValue < 15) {
 			aColor.a += 0.05f;
 			title.material.color = aColor;
 
 		} else {
-			start.enabled = true;
-			guide.enabled = true;
-			sword.SetActive (true);
-			roundTable.SetActive (true);
+			if (gameObject.transform.position.y < 50) {
+				gameObject.transform.Translate (Vector3.up * 100 * Time.deltaTime);
+			} else {
+
+				if (start.rectTransform.position.y < -250) {
+					start.rectTransform.Translate (Vector3.up * 250 * Time.deltaTime);
+					guide.rectTransform.Translate (Vector3.up * 250 * Time.deltaTime);
+				}
+			}
+
+
 		}
 	}
+		
+
 }

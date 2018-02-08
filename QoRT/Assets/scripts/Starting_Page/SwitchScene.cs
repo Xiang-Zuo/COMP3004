@@ -5,19 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class SwitchScene : MonoBehaviour {
 	public GameObject sword;
-	bool scaleNow;
+	public GameObject startSound;
+	bool scaleSwordNow;
+
 
 	void Start () {
-		scaleNow = false;
+		scaleSwordNow = false;
 	}
 
 
 	void Update (){
 
-		if (scaleNow) {
+		if (scaleSwordNow) {
 			sword.GetComponent<Renderer> ().material.color = new Color (2.5f,2.5f,2.5f);
-			sword.transform.localScale += new Vector3 (40f, 40f, 0f);
-			sword.transform.Translate (Vector3.right * 250 * Time.deltaTime);
+			sword.transform.localScale += new Vector3 (30f, 30f, 0f);
+			sword.transform.Translate (Vector3.right * 500 * Time.deltaTime);
 			sword.transform.Translate (Vector3.up * 50 * Time.deltaTime);
 			sword.transform.Translate (Vector3.forward * 2 * Time.deltaTime);
 		}
@@ -26,14 +28,15 @@ public class SwitchScene : MonoBehaviour {
 
 
 	IEnumerator toSceneOne(){
-		yield return new WaitForSeconds (0.15f);
+		yield return new WaitForSeconds (0.8f);
 		SceneManager.LoadScene (1);
 	}
 
 	public void loadScene()
 	{
+		startSound.SetActive (true);
 		sword.GetComponent<Renderer> ().sortingOrder = 10;
-		scaleNow = true;
+		scaleSwordNow = true;
 		StartCoroutine (toSceneOne ());
 	}
 
