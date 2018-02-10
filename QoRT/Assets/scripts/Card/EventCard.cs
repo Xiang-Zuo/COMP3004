@@ -7,8 +7,7 @@ public class EventCard : Card {
     public EventCard(string aName, Kind aKind)
     {
         this.setName(aName);
-        this.setKind(aKind);
-      
+        this.setKind(aKind);      
     }
 }
 

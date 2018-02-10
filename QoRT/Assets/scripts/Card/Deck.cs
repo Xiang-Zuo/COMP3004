@@ -5,10 +5,12 @@ using UnityEngine;
 public class Deck {
 
     private List<Card> advanture = new List<Card>();
-    private List<Card> story = new List<Card>();
+    private List<QuestCard> questCard = new List<QuestCard>();
+    private List<EventCard> eventCard = new List<EventCard>();
+    private List<TournamentCard> tournCard = new List<TournamentCard>();
     private List<Card> rank = new List<Card>();
 
-    System.IO.StreamReader cardFile = new System.IO.StreamReader(Application.dataPath + @"\scripts\Card\cards.txt");
+    System.IO.StreamReader cardFile = new System.IO.StreamReader(Application.dataPath + @"/scripts/Card/cards.txt");
     private string line;
     
     public void loadCard()
@@ -45,17 +47,17 @@ public class Deck {
                 case "        SQ":
                     //line = line.Substring(11, 5);
                     QuestCard aQuestCard = new QuestCard(line, Kind.QUEST, int.Parse(line.Substring(17, 1)));
-                    story.Add(aQuestCard);
+                    questCard.Add(aQuestCard);
                     break;
                 case "        ST":
                     //line = line.Substring(11, 2);
                     TournamentCard aTournamentCard = new TournamentCard(line, Kind.TOURNAMENT, int.Parse(line.Substring(14, 1)));
-                    story.Add(aTournamentCard);
+                    tournCard.Add(aTournamentCard);
                     break;
                 case "        SE":
                     //line = line.Substring(11, 2);
                     EventCard aEventCard = new EventCard(line, Kind.EVENT);
-                    story.Add(aEventCard);
+                    eventCard.Add(aEventCard);
                     break;
                 case "        RD":
                     //line = line.Substring(11, 2);
@@ -82,16 +84,23 @@ public class Deck {
         advanture = sfed_adv_deck;
     }
 
-   
-
     public List<Card> getAdvantureDeck()
     {
         return advanture;
     }
 
-    public List<Card> getStoryDeck()
+    public List<QuestCard> getQuestDeck()
     {
-        return story;
+        return questCard;
+    }
+
+    public List<EventCard> getEventDeck()
+    {
+        return eventCard;
+    }
+    public List<TournamentCard> getTournDeck()
+    {
+        return tournCard;
     }
 
     public List<Card> getRankDeck()
