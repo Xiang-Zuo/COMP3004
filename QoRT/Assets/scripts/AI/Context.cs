@@ -5,8 +5,8 @@ using UnityEngine;
 
 	public class Context
 	{
-		Strategy strategy;
-		public Context(Strategy strategy)
+		AIStrategy strategy;
+		public Context(AIStrategy strategy)
 		{
 			this.strategy = strategy;
 		}

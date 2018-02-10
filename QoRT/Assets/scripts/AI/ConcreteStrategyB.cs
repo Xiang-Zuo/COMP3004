@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine;
 
 
-	public class ConcreteStrategyB : Strategy
+	public class ConcreteStrategyB : AIStrategy
 	{
 		public override void strategyInterface()
 		{
