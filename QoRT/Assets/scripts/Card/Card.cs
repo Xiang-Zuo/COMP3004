@@ -6,6 +6,7 @@ public class Card {
 
     private string name;
     private Kind kind;
+   
     
     public string getName()
     {

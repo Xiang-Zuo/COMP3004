@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -30,7 +30,7 @@ public class Test : MonoBehaviour
 
     private int MAXPLAYERNUM = 4;
     private int advantureCard_count = 0;
-    private bool testValid = true;
+  
 
 
     // Use this for initialization
@@ -41,7 +41,7 @@ public class Test : MonoBehaviour
         //event.click.start
         load_dealing();
 
-        for (int i = 0; i < 5; i++)  //to test if all story have been used
+        for (int i = 0; i < 1; i++)  //to test if all story have been used
         {
             storyEvent();
         }
@@ -196,17 +196,19 @@ public class Test : MonoBehaviour
     void handleQuestEventSponsor(QuestCard aQuestcard, Player aSponsor)
     {
         //先get stage判断sponosor要出几张牌
+        bool testValid = true;
         QuestCard aCard = aQuestcard;
         int stageNum = aCard.getStageNum();
         print(aCard.getName());
         print("stagenum " + stageNum);
         //string cardName = aCard.getName ().Substring(0,16);
-        Card sponsorCard1 = new Card();
-        Card sponsorCard2 = new Card();
-        Card sponsorCard3 = new Card();
-        Card sponsorCard4 = new Card();
-        Card sponsorCard5 = new Card();
-
+        int stageAtk1=0;
+        int stageAtk2=0;
+        int stageAtk3=0;
+        int stageAtk4=0;
+        int stageAtk5=0;
+        int[] stagesAtk = { stageAtk1, stageAtk2, stageAtk3, stageAtk4, stageAtk5 };
+        
         List<Card> stage1 = new List<Card>();
         List<Card> stage2 = new List<Card>();
         List<Card> stage3 = new List<Card>();
@@ -220,33 +222,123 @@ public class Test : MonoBehaviour
         stages[3] = stage4;
         stages[4] = stage5;
 
-
-        for (int i = 0; i < 5; i++)
+        bool valid = false;
+        while (!valid)
         {
-            for (int j = 0; j < 3; j++)
+            for (int i = 0; i < stageNum; i++)         //check insert calid
             {
-                Card theCard = getRandomCardFromSponsor(aSponsor);
-                if (theCard.getKind() == Kind.TEST && testValid != false)
+                bool foeValid = false;
+                for (int j = 0; j < 3; j++)
                 {
-                    stages[i].Add(theCard);
-                    print(theCard.getName());
-                    testValid = false;
+                    Card theCard = getRandomCardFromSponsor(aSponsor);              //click event
+                    if (theCard.getKind() == Kind.TEST)
+                    {
+                        if (testValid != true)
+                        {
+                            j--;
+                            Debug.LogError("test only one per quest");
+                        }
+                        else if (j == 0)
+                        {
+                            j = 3;
+                            stages[i].Add(theCard);
+                            testValid = false;
+                            //print(theCard.getName());
+                        }
+                        else
+                        {
+                            j--;
+                            Debug.LogError("test only one stage");
+                        }
+                    }
+                    else if (j == 2 && theCard.getKind() != Kind.FOE && foeValid == false)
+                    {
+                        j--;
+                        Debug.LogError("you need at least one foe card per stage");
+
+                    }
+                    else if (theCard.getKind() == Kind.FOE)
+                    {
+                        stages[i].Add(theCard);
+                        //print(theCard.getName());
+                        foeValid = true;
+                    }
+                    else
+                    {
+                        stages[i].Add(theCard);
+                        //print(theCard.getName());
+                    }
                 }
-                else if (theCard.getKind() == Kind.TEST && testValid == false)
+                //print("stage" + (i + 1) + "end here");
+            }
+
+            for (int i = 0; i < stageNum; i++)   //check atk valid
+            {
+                for (int j = 0; j < stages[i].Count; j++)
                 {
-                    j--;
-                    //print("already test --------------------------------");
-                }
-                else
-                {
-                    stages[i].Add(theCard);
-                    print(theCard.getName());
+                    if (j == 0 && stages[i][j].getKind() == Kind.TEST)
+                    {
+                        if (i == 0)
+                        {
+                            stagesAtk[i] = 0;
+                        }
+                        else
+                        {
+                            stagesAtk[i] = stagesAtk[i - 1];
+                        }
+                    }
+                    else if (stages[i][j].getKind() == Kind.FOE)
+                    {
+                        FoeCard aFoeCard = (FoeCard)stages[i][j];
+                        stagesAtk[i] += aFoeCard.getAtk();
+                    }
+                    else if (stages[i][j].getKind() == Kind.ALLY)
+                    {
+                        AllyCard anAllyCard = (AllyCard)stages[i][j];
+                        stagesAtk[i] += anAllyCard.getAtk();
+                    }
+                    else if (stages[i][j].getKind() == Kind.WEAPON)
+                    {
+                        WeaponCard aWeaponCard = (WeaponCard)stages[i][j];
+                        stagesAtk[i] += aWeaponCard.getAtk();
+                    }
+                    else if (stages[i][j].getKind() == Kind.AMOUR)
+                    {                      
+                        AmourCard anAmourCard = (AmourCard)stages[i][j];
+                        stagesAtk[i] += anAmourCard.getAtk();
+                    }else
+                    {
+                        Debug.LogError("error, error to get atk num");
+                    }
                 }
             }
-            print("stage" + (i + 1) + "end here");
+            if (checkAtkValid(stagesAtk,stageNum) == true)
+            {
+                valid = true;
+                for (int i = 0; i < stageNum; i++)
+                {
+                    print("stage " + i + "total atk is " + stagesAtk[i]);
+                }
+            }else
+            {
+                testValid = true;
+                for (int i = 0; i < stageNum; i++)
+                {
+                    stagesAtk[i] = 0;
+                }
+            }
         }
+    
+    }
 
-        testValid = true;
+    bool checkAtkValid(int[] anArray, int length)
+    {
+        for (int i = 1; i < length; i++)
+        {
+            if (anArray[i - 1] > anArray[i])
+                return false;
+        }
+        return true;
     }
 
     void handleQuestEvent(QuestCard aQuestcard, Player aPlayer)
