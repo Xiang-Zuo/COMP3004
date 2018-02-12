@@ -44,21 +44,25 @@ public class Deck {
                     AmourCard aAmourCard = new AmourCard(line, Kind.AMOUR, int.Parse(line.Substring(11, 2)));
                     advanture.Add(aAmourCard);
                     break;
+				//Quests
                 case "        SQ":
                     //line = line.Substring(11, 5);
                     QuestCard aQuestCard = new QuestCard(line, Kind.QUEST, int.Parse(line.Substring(17, 1)));
                     questCard.Add(aQuestCard);
                     break;
+				//Touranaments
                 case "        ST":
                     //line = line.Substring(11, 2);
                     TournamentCard aTournamentCard = new TournamentCard(line, Kind.TOURNAMENT, int.Parse(line.Substring(14, 1)));
                     tournCard.Add(aTournamentCard);
                     break;
+				//events
                 case "        SE":
                     //line = line.Substring(11, 2);
                     EventCard aEventCard = new EventCard(line, Kind.EVENT);
                     eventCard.Add(aEventCard);
                     break;
+				//rank deck
                 case "        RD":
                     //line = line.Substring(11, 2);
                     RankCard aRankCard = new RankCard(line, Kind.RANK, int.Parse(line.Substring(14, 2)));
