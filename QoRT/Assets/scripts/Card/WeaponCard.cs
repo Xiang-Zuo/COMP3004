@@ -6,7 +6,7 @@ public class WeaponCard : Card
 {
     private int atk;
     
-    public WeaponCard(string aName, Kind aKind, int anAtk)
+	public WeaponCard(string aName, Kind aKind, int anAtk)
     {
         this.setName(aName);
         this.setKind(aKind);
@@ -17,4 +17,5 @@ public class WeaponCard : Card
     {
         return this.atk;
     }
+		
 }

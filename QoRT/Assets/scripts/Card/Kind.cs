@@ -11,5 +11,6 @@ public enum Kind {
     TOURNAMENT,
     WEAPON,
     EVENT,
-    RANK
+    RANK,
+    SHIELD
 }

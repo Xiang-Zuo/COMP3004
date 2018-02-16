@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -44,24 +44,28 @@ public class Deck {
                     AmourCard aAmourCard = new AmourCard(line, Kind.AMOUR, int.Parse(line.Substring(11, 2)));
                     advanture.Add(aAmourCard);
                     break;
+				//Quests
                 case "        SQ":
                     //line = line.Substring(11, 5);
                     QuestCard aQuestCard = new QuestCard(line, Kind.QUEST, int.Parse(line.Substring(17, 1)));
                     questCard.Add(aQuestCard);
                     break;
+				//Touranaments
                 case "        ST":
                     //line = line.Substring(11, 2);
                     TournamentCard aTournamentCard = new TournamentCard(line, Kind.TOURNAMENT, int.Parse(line.Substring(14, 1)));
                     tournCard.Add(aTournamentCard);
                     break;
+				//events
                 case "        SE":
                     //line = line.Substring(11, 2);
                     EventCard aEventCard = new EventCard(line, Kind.EVENT);
                     eventCard.Add(aEventCard);
                     break;
+				//rank deck
                 case "        RD":
                     //line = line.Substring(11, 2);
-                    RankCard aRankCard = new RankCard(line, Kind.RANK, int.Parse(line.Substring(14, 2)));
+                    RankCard aRankCard = new RankCard(line, Kind.RANK, setRank(int.Parse(line.Substring(14, 2))));
                     rank.Add(aRankCard);
                     break;
                 default:
@@ -106,6 +110,24 @@ public class Deck {
     public List<Card> getRankDeck()
     {
         return rank;
+    }
+
+    Rank setRank(int atk)
+    {
+        if (atk == 5)
+        {
+            return Rank.SQUIRE;
+        }
+        else if (atk == 10)
+        {
+            return Rank.KNIGHT;
+        }
+        else if (atk == 20)
+        {
+            return Rank.CHAMPIONKNIGHT;
+        }
+
+        return Rank.SQUIRE;
     }
 }
 

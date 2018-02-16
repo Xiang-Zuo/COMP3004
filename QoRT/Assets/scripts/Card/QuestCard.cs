@@ -17,6 +17,7 @@ public class QuestCard : Card {
     {
         return this.stageNum;
     }
+		
 
     /*public Ability getAbility()
     {

@@ -26,9 +26,10 @@ public class FoeCard : Card
     {
         return this.atkSpecial;
     }
-    /*public Ability getAbility()
+    
+    public void setAtk(int newAtk)
     {
-        return this.ability;
-    }*/
+        atk = newAtk;
+    }
 
 }

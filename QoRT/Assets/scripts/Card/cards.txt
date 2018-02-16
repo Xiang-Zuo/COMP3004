@@ -123,12 +123,12 @@ QuestsTest_02_Questing_Beast
 QuestsTest_02_Temptation
 QuestsTest_02_Valor
 QuestsTest_02_Morgan_Le_Fey
+        SQ_BH   _2_1
         SQ_JTTEF_3_1
         SQ_VKAE _3_1
         SQ_VKAE _3_2
         SQ_RTSR _2_1
         SQ_RTSR _2_2
-        SQ_BH   _2_1
         SQ_BH   _2_2
         SQ_SFTQB_4_1
         SQ_DTQH _4_1

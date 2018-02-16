@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RankCard : Card {
-    public int atk;
+    private Rank rank;
 
-    public RankCard(string aName, Kind aKind, int anAtk)
+    public RankCard(string aName, Kind aKind, Rank aRank)
     {
         this.setName(aName);
         this.setKind(aKind);
-        this.atk = anAtk;
-      
+        rank = aRank;
+
     }
-    public int getAtk()
+   
+    Rank getRank()
     {
-        return this.atk;
+        return rank;
     }
 }

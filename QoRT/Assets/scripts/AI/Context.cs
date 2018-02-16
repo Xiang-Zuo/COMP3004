@@ -5,16 +5,20 @@ using UnityEngine;
 
 	public class Context
 	{
-		AIStrategy strategy;
-		public Context(AIStrategy strategy)
+        AbstractAI strategy;
+        private int stageNum;
+		public Context(AbstractAI strategy, int stageNum)
 		{
 			this.strategy = strategy;
+            this.stageNum = stageNum;
 		}
 
-		public void ContextInterface()
+		public List<Card>[] DoISponsorAQuest()
 		{
-			strategy.strategyInterface();
-
+            List<Card>[] sponsorStages;
+            Debug.Log("create new strategy, it has " + stageNum + " stages ");
+			sponsorStages=strategy.DoISponsorAQuest();
+            return sponsorStages;
 		}
 	}
 
