@@ -45,7 +45,8 @@ namespace QuestGame {
 		private void init() {
             File.WriteAllText(Directory.GetCurrentDirectory() + "/Logs/gameLog.txt", String.Empty);
 			printToFile("-------------------- INITIALIZE LOGGER ---------------------\n");
-			printToFile(generateTimestamp() + ": Logger initialized\n");
+            printToFile("reference: from Lachlan (culearn)\n");
+            printToFile(generateTimestamp() + ": Logger initialized\n");
 		}
 
 		private void printToFile(string n) {

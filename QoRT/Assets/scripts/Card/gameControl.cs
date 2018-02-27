@@ -406,7 +406,7 @@ public class gameControl : MonoBehaviour
     
 	void storyEvent2(bool isRigging)
 	{
-		Player theSponsor;
+        sponsorNow = p2;
 		if (rigging == true)
 		{
 			EventCard theEvent = eventDeck.Find (x => x.getName ().Contains ("PT"));
@@ -415,7 +415,7 @@ public class gameControl : MonoBehaviour
 				getCard (5, cardName, 0);
 			}
 
-			gameLog.info("the story card is " + theEvent.getName());
+			gameLog.info("the next story card is " + theEvent.getName()+ " "+sponsorNow.getName()+" draw it");
 			eventNow = theEvent;
 			msgBar.SetActive (false);
 			//sortCard (p2);
@@ -441,7 +441,9 @@ public class gameControl : MonoBehaviour
 		next_story.SetActive (false);
 		if (rigging == true) {
 			EventCard theEvent = eventDeck.Find (x => x.getName ().Contains ("CD"));
-			if (theEvent != null) {	
+            gameLog.info("the next story card is " + theEvent.getName() + " "+sponsorNow.getName() + " draw it");
+
+            if (theEvent != null) {	
 				string cardName = theEvent.getName ();
 				getCard (5, cardName, 0);
 			}
