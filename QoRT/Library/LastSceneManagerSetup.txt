@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/scenes/gameBoard_0122.unity
+  isLoaded: 1
+  isActive: 1
