@@ -1,0 +1,54 @@
+-------------------- INITIALIZE LOGGER ---------------------
+reference: from Lachlan (culearn)
+2018-03-19T19:54:58.7011241-04:00: Logger initialized
+2018-03-19T19:55:00.5318157-04:00 [INFO]: players p1 has QuestsWeap_10_10_05_Sword
+2018-03-19T19:55:00.5323173-04:00 [INFO]: players p1 has QuestsFoes_20_30_03_Evil
+2018-03-19T19:55:00.5328175-04:00 [INFO]: players p1 has QuestsFoes_40_40_02_Giant
+2018-03-19T19:55:00.5328175-04:00 [INFO]: players p1 has QuestsWeap_10_10_13_Sword
+2018-03-19T19:55:00.5333198-04:00 [INFO]: players p1 has QuestsFoes_20_30_02_Evil
+2018-03-19T19:55:00.5338213-04:00 [INFO]: players p1 has QuestsTest_01_Valor
+2018-03-19T19:55:00.5338213-04:00 [INFO]: players p1 has QuestsWeap_05_05_05_Dagger
+2018-03-19T19:55:00.5348231-04:00 [INFO]: players p1 has QuestsFoes_25_35_01_Black
+2018-03-19T19:55:00.5348231-04:00 [INFO]: players p1 has QuestsWeap_10_10_06_Horse
+2018-03-19T19:55:00.5353251-04:00 [INFO]: players p1 has QuestsWeap_10_10_02_Horse
+2018-03-19T19:55:00.5358267-04:00 [INFO]: players p1 has QuestsAlly_00_02_QueenIseult
+2018-03-19T19:55:00.5363277-04:00 [INFO]: players p1 has QuestsFoes_05_05_05_Thieves
+2018-03-19T19:55:00.5368295-04:00 [INFO]: players p2AI has QuestsTest_01_Morgan_Le_Fey
+2018-03-19T19:55:00.5368295-04:00 [INFO]: players p2AI has QuestsWeap_05_05_02_Dagger
+2018-03-19T19:55:00.5373307-04:00 [INFO]: players p2AI has QuestsWeap_10_10_01_Sword
+2018-03-19T19:55:00.5378323-04:00 [INFO]: players p2AI has QuestsFoes_15_15_05_Robber
+2018-03-19T19:55:00.5383335-04:00 [INFO]: players p2AI has QuestsFoes_20_30_01_Evil
+2018-03-19T19:55:00.5388348-04:00 [INFO]: players p2AI has QuestsWeap_30_30_02_Excalibur
+2018-03-19T19:55:00.5393371-04:00 [INFO]: players p2AI has QuestsWeap_15_15_05_Battleax
+2018-03-19T19:55:00.5398378-04:00 [INFO]: players p2AI has QuestsFoes_25_40_02_Green
+2018-03-19T19:55:00.5403383-04:00 [INFO]: players p2AI has QuestsWeap_05_05_01_Dagger
+2018-03-19T19:55:00.5408391-04:00 [INFO]: players p2AI has QuestsFoes_05_05_08_Thieves
+2018-03-19T19:55:00.5413422-04:00 [INFO]: players p2AI has QuestsFoes_30_30_02_Mordred
+2018-03-19T19:55:00.5418429-04:00 [INFO]: players p2AI has QuestsWeap_10_10_08_Horse
+2018-03-19T19:55:00.5423439-04:00 [INFO]: players p3AI has QuestsFoes_05_05_02_Thieves
+2018-03-19T19:55:00.5428442-04:00 [INFO]: players p3AI has QuestsFoes_25_40_01_Green
+2018-03-19T19:55:00.5433455-04:00 [INFO]: players p3AI has QuestsFoes_15_25_05_Saxon
+2018-03-19T19:55:00.5433455-04:00 [INFO]: players p3AI has QuestsFoes_30_30_04_Mordred
+2018-03-19T19:55:00.5438480-04:00 [INFO]: players p3AI has QuestsWeap_20_20_01_Lance
+2018-03-19T19:55:00.5443495-04:00 [INFO]: players p3AI has QuestsWeap_10_10_15_Sword
+2018-03-19T19:55:00.5448503-04:00 [INFO]: players p3AI has QuestsTest_01_Questing_Beast
+2018-03-19T19:55:00.5453508-04:00 [INFO]: players p3AI has QuestsWeap_10_10_10_Horse
+2018-03-19T19:55:00.5458536-04:00 [INFO]: players p3AI has QuestsWeap_10_10_16_Sword
+2018-03-19T19:55:00.5458536-04:00 [INFO]: players p3AI has QuestsWeap_20_20_06_Lance
+2018-03-19T19:55:00.5463533-04:00 [INFO]: players p3AI has QuestsWeap_05_05_06_Dagger
+2018-03-19T19:55:00.5468559-04:00 [INFO]: players p3AI has QuestsWeap_10_10_05_Horse
+2018-03-19T19:55:00.5473577-04:00 [INFO]: players p4AI has QuestsWeap_10_10_07_Horse
+2018-03-19T19:55:00.5478587-04:00 [INFO]: players p4AI has QuestsFoes_05_05_06_Thieves
+2018-03-19T19:55:00.5483597-04:00 [INFO]: players p4AI has QuestsWeap_20_20_05_Lance
+2018-03-19T19:55:00.5483597-04:00 [INFO]: players p4AI has QuestsWeap_10_10_07_Sword
+2018-03-19T19:55:00.5488615-04:00 [INFO]: players p4AI has QuestsAmou_10_03_Amour
+2018-03-19T19:55:00.5493627-04:00 [INFO]: players p4AI has QuestsWeap_30_30_01_Excalibur
+2018-03-19T19:55:00.5493627-04:00 [INFO]: players p4AI has QuestsWeap_20_20_03_Lance
+2018-03-19T19:55:00.5498627-04:00 [INFO]: players p4AI has QuestsFoes_15_25_07_Saxon
+2018-03-19T19:55:00.5503655-04:00 [INFO]: players p4AI has QuestsFoes_20_30_04_Evil
+2018-03-19T19:55:00.5508665-04:00 [INFO]: players p4AI has QuestsWeap_10_10_09_Sword
+2018-03-19T19:55:00.5513681-04:00 [INFO]: players p4AI has QuestsFoes_05_15_02_Boar
+2018-03-19T19:55:00.5513681-04:00 [INFO]: players p4AI has QuestsWeap_10_10_04_Sword
+2018-03-19T19:55:11.6054385-04:00 [INFO]: total ATK in this stage is 5
+2018-03-19T19:55:13.6767890-04:00 [INFO]: total ATK in this stage is 15
+2018-03-19T19:55:15.2886331-04:00 [INFO]: total ATK in this stage is 20
