@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4b1a64a52ac6a3945b19745b114420b9
+timeCreated: 1522427585
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - player_unit: {instanceID: 0}
+  - p1pos: {instanceID: 0}
+  - cardFile: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
