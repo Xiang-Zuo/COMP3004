@@ -1,0 +1,25 @@
+player1 just join the game
+player2 just join the game
+player1 just draw a story card, its         SQ_BH   _2_2
+player2 just draw a story card, its         SQ_BH   _2_2
+ask player1 if sonsor
+ask player1 if sonsor
+ask player1 if sonsor
+player1 accept to sponsor the story
+sponsor choose card
+sponsor choose card QuestsFoes_25_35_03_Black
+sponsor choose card
+sponsor choose card QuestsFoes_20_30_05_Evil*QuestsWeap_10_10_06_Sword
+player2 accept join the quest
+player2 choose card foe quest 
+player2's amourAtk is 10
+player2 play sir lancelot ally card and atk is 25
+player2's allyAtk is 25
+player2 plays QuestsAlly_15_00_SirLancelot*QuestsWeap_10_10_10_Sword*QuestsAmou_10_03_Amour in this stage 
+player2 choose card foe quest 
+this stage finish this stage ends, player2 pass, player who pass continue play
+player2 choose card foe quest 
+player2's amourAtk is 10
+player2's allyAtk is 10
+player2 plays QuestsWeap_15_15_05_Battleax*QuestsWeap_05_05_05_Dagger in this stage 
+storyQuest finish all players' amourAtk should be 0 now.

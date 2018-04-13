@@ -1,0 +1,14 @@
+player1 just join the game
+player2 just join the game
+player1 just draw a story card, its         SQ_BH   _2_2
+player2 just draw a story card, its         SQ_BH   _2_2
+ask player1 if sonsor
+ask player1 if sonsor
+ask player1 if sonsor
+player1 just draw a story card, its         ST_AC_3
+player2 just draw a story card, its         ST_AC_3
+player1 choose card in Tournment 
+player1 atk in this tournment is 25
+player2 choose card in Tournment 
+player2 atk in this tournment is 20
+player2is the winner in the Tournment, Environment.NewLine
